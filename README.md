@@ -1,1 +1,1 @@
-# [run on replit](https://replit.com//github/DerpyTheDev/v13-template)
+# [run on replit](https://replit.com/github/DerpyTheDev/v13-template)
