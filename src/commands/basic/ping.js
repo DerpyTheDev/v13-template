@@ -18,8 +18,8 @@ const {
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName("")
-		.setDescription(""),
+		.setName("ping")
+		.setDescription("Get ponged"),
 	async execute(interaction, client) {
            interaction.reply({
             content: 'pong'
