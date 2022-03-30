@@ -1,5 +1,11 @@
-const { Client, Intents, Collection } = require('discord.js');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const {
+	Client,
+	Intents,
+	Collection
+} = require('discord.js');
+const client = new Client({
+	intents: [Intents.FLAGS.GUILDS]
+});
 const fs = require('fs');
 const e = require('./config/embed.json');
 require('./server.js');
@@ -12,11 +18,11 @@ const eventsFiles = fs.readdirSync("src/events").filter(file => file.endsWith(".
 const commandFolder = fs.readdirSync("src/commands");
 
 (async () => {
-  for(file of functions ) {
-require(`./functions/${file}`)(client);
-  }
-client.handleEvents(eventsFiles, "/src/events");
-client.handleCommands(commandFolder, "src/commands");
-client.handleButtons();
- client.login(process.env.TOKEN);
+	for (file of functions) {
+		require(`./functions/${file}`)(client);
+	}
+	client.handleEvents(eventsFiles, "/src/events");
+	client.handleCommands(commandFolder, "src/commands");
+	client.handleButtons();
+	client.login(process.env.TOKEN);
 })();
