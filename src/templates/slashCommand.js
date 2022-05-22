@@ -1,25 +1,22 @@
-const Discord = require('discord.js');
 const {
-	SlashCommandBuilder
+  SlashCommandBuilder
 } = require('@discordjs/builders');
 const {
-	MessageEmbed
-} = require('discord.js');
-const {
-	footer,
-	normal,
-	error
+  footer,
+  normal,
+  error
 } = require('../../config/embed.json');
 const {
-	MessageButton,
-	MessageActionRow
+  MessageButton,
+  MessageEmbed,
+  MessageActionRow
 } = require('discord.js');
 
 module.exports = {
-	data: new SlashCommandBuilder()
-		.setName("")
-		.setDescription(""),
-	async execute(interaction, client) {
-		//code
-	},
+  data: new SlashCommandBuilder()
+	.setName("")
+	.setDescription(""),
+  async execute(interaction, client) {
+       //code
+  },
 };
