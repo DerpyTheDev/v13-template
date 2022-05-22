@@ -4,7 +4,7 @@ module.exports = {
   async execute(client) {
     client.user.setActivity({
       type: 'WATCHING',
-      name: "discordjs.guide | /"
+      name: "/ping | By DerpyDev"
       });
     console.log('logged in!')
   },
